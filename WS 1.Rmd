@@ -1,0 +1,16 @@
+---
+title: "Entrance Survey for the Day"
+author: "Vidya Madhavan"
+date: "10/09/2020"
+output: html_document
+---
+
+```{r}
+DF <-read.csv("hudk4050-entrance-survey.csv")
+190 + 45
+
+mean(DF$UTC)
+
+DF$UTC.ms <- DF$UTC*DF$math.stat
+
+```
