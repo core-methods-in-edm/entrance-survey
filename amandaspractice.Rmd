@@ -1,0 +1,45 @@
+---
+title: "W2-Entrance Survey"
+author: "Amanda Oliveira"
+date: "9/10/2020"
+output: html_document
+---
+
+to open code block: ctrl + alt + i
+to run code: ctrl + enter
+
+
+```{r}
+DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
+
+```
+
+```{r}
+mode(DF$program)
+is.numeric(DF$UTC)
+```
+
+# Simple Math
+```{r}
+7+8
+8+2
+```
+
+# Variable manipulation
+```{r}
+mean(DF$UTC)
+DF$UTC.ms <- DF$UTC*DF$math.stat 
+```
+
+# Logic 
+```{r}
+
+```
+
+
+
+
+
+
+
+
