@@ -16,6 +16,7 @@ DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
 
 ```{r}
 mode(DF$UTC)
+mode(DF$program)
 is.numeric(DF$UTC)
 ```
 
@@ -47,6 +48,7 @@ DF$program2 <- ifelse(DF$program == "Learning Analytics", 1, 2)
 x <- seq(0, 1, 0.02)
 x
 y <- sample(DF$groupwork, 1001, replace = TRUE)
+
 
 ```
 
