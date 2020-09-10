@@ -1,0 +1,37 @@
+---
+title: "entrance-survey"
+author: "Nicole Schlosberg"
+date: "9/10/2020"
+output: html_document
+---
+
+opt + cmd + i 
+cmd + enter
+
+```{r}
+#creating a data frame object (use capital letters and a variable would be lowercase)
+DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
+
+#check the variable type
+mode(DF$program)
+is.numeric(DF$program)
+
+```
+
+#Simple Math 
+```{r}
+7 + 8
+8/2
+x <- 8/12
+mode(x)
+
+```
+
+#Variable manipulation
+```{r}
+mean(DF$UTC)
+DF$UTC.ms <- DF$UTC*DF$math.stat
+
+```
+ 
+
