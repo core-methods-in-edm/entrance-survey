@@ -52,6 +52,12 @@ y <- sample(DF$groupwork, 1001, replace = TRUE)
 
 ```
 
+#Sequences & Samples
+```{r}
+x<-y
+```
+
+
 
 
 
