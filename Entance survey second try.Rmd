@@ -1,0 +1,28 @@
+---
+title: "entrance survey second try"
+author: "Charles Lang Fangyu Ruan"
+date: "2020/9/11"
+output: html_document
+---
+
+# Read in the data
+```{r}
+DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
+is.factor(DF$program)
+
+```
+
+# Simple math
+```{r}
+6+7
+8/2
+x <- 8/12
+mode(x)
+```
+# Variable manipulation
+```{r}
+mean(DF$UTC)
+
+DF$UTC.ms <- DF$UTC*DF$math.stat
+```
+
