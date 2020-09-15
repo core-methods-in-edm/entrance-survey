@@ -9,6 +9,7 @@ output: html_document
 ```{r}
 DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
 
+is.numeric(DF$program)
 mode(DF$program)
 
 ```
