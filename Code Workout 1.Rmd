@@ -1,0 +1,30 @@
+---
+title: "entrance survey"
+author: "Stanley Zhao"
+date: "9/23/2020"
+output: html_document
+---
+
+
+
+
+```{r}
+DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
+mode(DF$program)
+```
+
+# Simple Math
+```{r}
+7 + 8
+8 / 2
+x <- 8/12
+mode(x)
+```
+
+# Variable manipulation
+```{r}
+mean(DF$UTC)
+
+DF$UTC.ms <- DF$UTC*DF$math.stat
+```
+
